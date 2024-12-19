@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:focusable="true"
+            android:hint="@string/edit_message"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="#181818"
+            android:textColorHint="#616161" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/linear_layout"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="209dp"
+            android:contentDescription="@string/image_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/like_dislike_layout"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_below="@id/frame_layout"
+        android:layout_marginTop="-46dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/like_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#9CFF9C"
+                android:contentDescription="@string/like"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/like"
+
+                />
+
+            <TextView
+                android:id="@+id/like_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/init_counter_value"
+                android:textAlignment="center"
+                android:textSize="46sp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/dislike_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FF9C9C"
+                android:contentDescription="@string/dislike"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dislike"
+
+                />
+
+            <TextView
+                android:id="@+id/dislike_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/init_counter_value"
+                android:textAlignment="center"
+                android:textSize="46sp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/like_dislike_layout"
+        android:layout_marginTop="-3dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="TextSizeCheck">
+
+        <Button
+            android:id="@+id/visit_website_button"
+            android:layout_width="156dp"
+            android:layout_height="57dp"
+            android:padding="16dp"
+            android:text="@string/visit_website"
+            android:textColor="#C5E1A5"
+            android:textSize="14sp"
+            android:backgroundTint="@color/black"
+            />
+
+        <Button
+            android:id="@+id/download_button"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:text="@string/download"
+            android:textColor="#C5E1A5"
+            android:textSize="14sp"
+            android:backgroundTint="@color/black"
+            />
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/about_app"
+            android:textColor="#C5E1A5"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="-2dp"
+        android:text="@string/name"
+        android:textAlignment="center" />
+
+</RelativeLayout>

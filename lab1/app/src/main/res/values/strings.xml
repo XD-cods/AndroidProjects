@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Л1 Кужир Владислав</string>
+    <string name="edit_message">Введите запрос</string>
+    <string name="button_send">Поиск</string>
+    <string name="image_description">Описание изображения</string>
+    <string name="init_counter_value">0</string>
+    <string name="dislike">dislike</string>
+    <string name="like">like</string>
+    <string name="visit_website">Посетить сайт</string>
+    <string name="download">Скачать</string>
+    <string name="name">Кужир Владислав АС-64</string>
+    <string name="welcome_message">Л1 Кужир Владислав АС-64</string>
+    <string name="about_app">О приложении</string>
+    <string name="hello">Л1 Кужир Владислав АС-64</string>
+    <string name="about_app_text">Разработал студент 3-го курса Кужир Владислав Витальевич\n\nЗадание:\nНеобходимо разраотать мобильное приложение, которое ищет в сети Интернет изображения по запросу пользователя, позволяет оценивать их, скачивать, и посещать интернет-страницы сайтов, на которых было найдено изображение.</string>
+</resources>
